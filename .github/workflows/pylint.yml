@@ -28,9 +28,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -U pylint
 
-      - name: Clear pylint cache (safe)
-        run: python -m pylint --clear-cache || true
-
       - name: Disk usage (debug)
         run: |
           df -h
