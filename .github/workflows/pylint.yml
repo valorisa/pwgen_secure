@@ -1,3 +1,4 @@
+# .github/workflows/pylint.yml
 name: Pylint
 
 on:
@@ -28,8 +29,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install -U pylint
 
+      - name: Show pylint version
+        run: python -m pylint --version || true
+
       - name: Clear pylint cache (safe)
-        run: python -m pylint --clear-cache || true
+        run: rm -rf .pylint.d || true
 
       - name: Disk usage (debug)
         run: |
