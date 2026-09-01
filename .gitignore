@@ -5,3 +5,6 @@ __pycache__/
 *.json
 passwords.txt
 secrets/
+# local test artifacts
+tests/
+test.md
