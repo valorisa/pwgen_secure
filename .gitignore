@@ -8,3 +8,6 @@ secrets/
 # local test artifacts
 tests/
 test.md
+
+# Generated repository digest
+digest.txt
