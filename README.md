@@ -1,3 +1,5 @@
+[![Pylint](https://github.com/valorisa/pwgen_secure/actions/workflows/pylint.yml/badge.svg?branch=main)](https://github.com/valorisa/pwgen_secure/actions/workflows/pylint.yml)
+
 # Générateur sécurisé de mots de passe et de phrases de passe
 
 `pwgen_secure` est un générateur interactif en Python permettant de créer des
