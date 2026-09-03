@@ -1,0 +1,12 @@
+{
+  // Liste des dossiers ou motifs à ignorer
+  "ignores": [
+    ".venv/**",
+    "**/__pycache__/**",
+    "node_modules/**"
+  ],
+  // Configuration des règles (optionnel)
+  "config": {
+    "MD013": false // Désactive la limite stricte de longueur de ligne (souvent pratique)
+  }
+}
