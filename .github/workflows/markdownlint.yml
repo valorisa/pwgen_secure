@@ -1,0 +1,29 @@
+name: Lint Markdown
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - '**/*.md'
+      - '.github/workflows/markdownlint.yml'
+      - '.markdownlint*'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - '**/*.md'
+      - '.github/workflows/markdownlint.yml'
+      - '.markdownlint*'
+
+jobs:
+  markdownlint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Run markdownlint-cli2
+        uses: DavidAnson/markdownlint-cli2-action@v24
+        with:
+          # Le fichier .markdownlint-cli2.jsonc sera pris en compte automatiquement
+          globs: '**/*.md'
